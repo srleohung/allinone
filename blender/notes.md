@@ -45,6 +45,8 @@ Pen settings
 全選 A
 選取連結項 Command + L
 反選 Ctrl + I
+增加選取 Shift(按住)
+減少選取 Ctrl(按住)
 # 工具類
 移動 G
 旋轉 F
@@ -92,14 +94,28 @@ Pen settings
 - 交集 Intersect 產生兩個物體重疊部份
 
 # Issues
-Blender ^2.8.3 中文化字體消失或殘缺問題
+Blender ^2.8.3 中文化字體消失或殘缺問題？
 - 下載 [Blender 2.8.2](https://download.blender.org/release/Blender2.82/)
 
-使用陣列或鏡象時，物體尺寸錯誤
+使用陣列或鏡象時，物體尺寸錯誤？
 - 套用旋轉與縮放 Ctrl + A - 旋轉與縮放
 
-快捷鍵失效
+快捷鍵失效？
 - 關閉倉頡或速成
+
+匯出 glTF 2.0 (.glb/.gltf) 時，缺失顏色或材質？
+- Material Properties - 使用節點 - 表面 Principled BSDF
+- 匯出時 - 幾何 - 材質
+
+使用 LoopTools Bridge 連接面時無效？
+- 先在物體模式結合 - 編輯模式選取打算連接的點 - 右鍵物體 - LoopTools - Bridge
+
+匯出 glTF 2.0 (.glb/.gltf) 時，缺失粒子設定(毛髮)？
+- Modifier Properties - 粒子設定 - 轉變 - 物體模式選取新增的Mesh - 物體 - 轉換為 - 來自網絡/文字的曲線 - 選取Mesh - Object Data Properties - 選取3D，填補方式為前，倒角深度為0.005 - 物體模式選取Mesh - 物體 - 轉換為 - 來自曲線/變幻/表面/文字的網絡
+
+如何生成毛髮(粒子設定)？
+- 編輯模式內選取打算生成毛髮的點 - Object Data Properties - 增加頂點群組 - 指派 - Particle Properties - 增加粒子設定 - 選取毛髮，發射內設定毛髮數量及長度，頂點群組的密度選取之前增加的頂點群組
+- 粒子編輯模式內可調整毛髮
 
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
