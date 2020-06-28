@@ -9,10 +9,12 @@ Blender 2.8.2 macOS
 
 # 數位板 Pen Tablets
 Wacom Intuos
-```
+```bash
 Pen settings
-- Middle click
-- Right click
+# 滑動工具列及畫面
+- Middle Click
+# 打開選單，編輯模式下選單有部分的Add-ons
+- Right Click
 ```
 
 # 物體模式 Object Mode
@@ -117,6 +119,9 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 如何生成毛髮(粒子設定)？
 - 編輯模式內選取打算生成毛髮的點 - Object Data Properties - 增加頂點群組 - 指派 - Particle Properties - 增加粒子設定 - 選取毛髮，發射內設定毛髮數量及長度，頂點群組的密度選取之前增加的頂點群組
 - 粒子編輯模式內可調整毛髮
+
+如何使用圖片為材質？
+- Material Properties - 增加材質 - 基礎色彩 - 影像紋理 - 開啟 - 選擇圖片 - 編輯模式內選取物體 - UV - 智慧 UV 投影
 
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
