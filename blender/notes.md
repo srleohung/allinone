@@ -47,6 +47,7 @@ Pen settings
 反選 Ctrl + I
 增加選取 Shift(按住)
 減少選取 Ctrl(按住)
+選取連結線 Option(按住)
 # 工具類
 移動 G
 旋轉 F
