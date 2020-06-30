@@ -34,6 +34,7 @@ Pen settings
 細分 Ctrl + 0-５(算繪等級)
 增加物體 Shift + A
 復製 Shift + D
+復製選單 Ctrl + C
 # 骨架類
 使用自動權重 Ctrl + P
 # 通用類
@@ -122,6 +123,9 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 
 如何使用圖片為材質？
 - Material Properties - 增加材質 - 基礎色彩 - 影像紋理 - 開啟 - 選擇圖片 - 編輯模式內選取物體 - UV - 智慧 UV 投影
+
+如何使用親子關係復製物體？
+- Object Properties(子物體) - 關係 - 親子選取父物體 - Object Properties(父物體) - Instancing - 選取點或面 - Ctrl + A - Make Instances Real
 
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
