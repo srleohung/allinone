@@ -127,5 +127,8 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 如何使用親子關係復製物體？
 - Object Properties(子物體) - 關係 - 親子選取父物體 - Object Properties(父物體) - Instancing - 選取點或面 - Ctrl + A - Make Instances Real
 
+如何連接骨架和物體？
+- 選取物體 - 按住Shift選取骨架 - Ctrl + P - 使用自動權重
+
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
