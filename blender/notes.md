@@ -51,6 +51,7 @@ Pen settings
 增加選取 Shift(按住)
 減少選取 Ctrl(按住)
 選取連結線 Option(按住)
+移動選取 C(esc為離開，按住Shift為減小選取)
 # 工具類
 移動 G
 旋轉 F
@@ -97,6 +98,9 @@ Pen settings
 - 差集 Difference 減掉兩個物體重疊部份
 - 交集 Intersect 產生兩個物體重疊部份
 
+實體化
+- 增加物體厚度, 偏移數值正負為向內或向外
+
 # Issues
 Blender ^2.8.3 中文化字體消失或殘缺問題？
 - 下載 [Blender 2.8.2](https://download.blender.org/release/Blender2.82/)
@@ -129,6 +133,12 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 
 如何連接骨架和物體？
 - 選取物體 - 按住Shift選取骨架 - Ctrl + P - 使用自動權重
+
+實體化時物體部份變形或方向錯誤？
+- 選取變形位置的點 - 網格 - 法線 - Flip
+
+如何在兩點之間增加點？
+- 選取兩點 - 邊線 - 細分
 
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
