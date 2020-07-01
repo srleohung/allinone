@@ -52,6 +52,7 @@ Pen settings
 減少選取 Ctrl(按住)
 選取連結線 Option(按住)
 移動選取 C(esc為離開，按住Shift為減小選取)
+移動時吸附 Ctrl(移動時按住)
 # 工具類
 移動 G
 旋轉 F
@@ -139,6 +140,9 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 
 如何在兩點之間增加點？
 - 選取兩點 - 邊線 - 細分
+
+如何在鏡象時移動至鏡象的中心點？
+- 選取點 - G - 移動時鎖定鏡象使用的軸(X/Y/Z) - 移動時按住Ctrl - 移動至中心點會自動吸附至正確的中心點
 
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
