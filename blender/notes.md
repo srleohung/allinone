@@ -139,10 +139,17 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 - 選取變形位置的點 - 網格 - 法線 - Flip
 
 如何在兩點之間增加點？
-- 選取兩點 - 邊線 - 細分
+- 選取兩點 - 編輯模式 - 邊線 - 細分
+
+如何在物體增加點？
+- 選取物體 - 編輯模式 - 邊線 - 細分
 
 如何在鏡象時移動至鏡象的中心點？
 - 選取點 - G - 移動時鎖定鏡象使用的軸(X/Y/Z) - 移動時按住Ctrl - 移動至中心點會自動吸附至正確的中心點
+
+如何縫製衣服？
+- 連接需要縫製的點(多個點時用 LoopTools Bridge - X - 僅面) - Physics Properties - 布料 - 外型 - Sewing - 物體模式下按播放動畫 - Modifier Properties - 套用
+- 如有模型作碰撞面 - 物體模式下選取模型 - Physics Properties - 碰撞
 
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
