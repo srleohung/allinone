@@ -58,6 +58,7 @@ Pen settings
 旋轉 F
 縮放 S
 擠出 E
+向外擠出 E + S
 旋轉 R
 復製 Shift + D
 建立面 F
@@ -146,6 +147,7 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 
 如何在鏡象時移動至鏡象的中心點？
 - 選取點 - G - 移動時鎖定鏡象使用的軸(X/Y/Z) - 移動時按住Ctrl - 移動至中心點會自動吸附至正確的中心點
+- 鏡象 - 選項 - 剪輯(中間線多出部份會被自動切除)
 
 如何縫製衣服？
 - 連接需要縫製的點(多個點時用 LoopTools Bridge - X - 僅面) - Physics Properties - 布料 - 外型 - Sewing - 物體模式下按播放動畫 - Modifier Properties - 套用
