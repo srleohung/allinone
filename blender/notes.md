@@ -55,6 +55,7 @@ Pen settings
 移動時吸附 Ctrl(移動時按住)
 # 工具類
 移動 G
+線上移動 G + G
 旋轉 F
 縮放 S
 擠出 E
@@ -152,6 +153,9 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 如何縫製衣服？
 - 連接需要縫製的點(多個點時用 LoopTools Bridge - X - 僅面) - Physics Properties - 布料 - 外型 - Sewing - 物體模式下按播放動畫 - Modifier Properties - 套用
 - 如有模型作碰撞面 - 物體模式下選取模型 - Physics Properties - 碰撞
+
+如果為物體的部份面上參考色?
+- Material Properties - + - 新增 - Viewport Display - 顏色 - 編輯模式下選取打算上色的面 - 指派
 
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
