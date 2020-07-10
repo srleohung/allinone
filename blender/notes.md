@@ -71,6 +71,8 @@ Pen settings
 面選單 Ctrl + F
 分離選單 P
 停止Knife Space
+縮放曲線 Option + S
+旋轉曲線 Command + T
 # 骨架類
 保持偏移 Ctrl + P - 保持偏移
 解除關係 Option + P - 解除關係
@@ -154,8 +156,14 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 - 連接需要縫製的點(多個點時用 LoopTools Bridge - X - 僅面) - Physics Properties - 布料 - 外型 - Sewing - 物體模式下按播放動畫 - Modifier Properties - 套用
 - 如有模型作碰撞面 - 物體模式下選取模型 - Physics Properties - 碰撞
 
-如果為物體的部份面上參考色?
+如何為物體的部份面上參考色?
 - Material Properties - + - 新增 - Viewport Display - 顏色 - 編輯模式下選取打算上色的面 - 指派
+
+如何生成髮片？
+- 生成髮片主體 - 曲線 - 路徑 - 生成髮片外型 - 曲線 - 貝茲/圓 - 選取路徑 - Object Data Properties - 幾何 - 倒角 - 物體選取貝茲/圓
+- 窄縮物體為髮片兩端
+- 髮片外型曲線內可增加多個曲線，髮片主體曲線上也會生成
+- 髮片外型曲線中間的點為髮片主體曲線的位置
 
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
