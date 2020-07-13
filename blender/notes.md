@@ -165,5 +165,12 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 - 髮片外型曲線內可增加多個曲線，髮片主體曲線上也會生成
 - 髮片外型曲線中間的點為髮片主體曲線的位置
 
+如何增加/關閉Areas(窗口)？
+- 移動至左上(編輯器類型的左邊)或右上(選項的右邊)直至出現＋號，按下拉動出現新的Areas
+- 兩個Areas之間按右鍵 - Join Areas - 選擇為主的Areas按下左鍵
+
+如何透明化Reference？
+- Object Data Properties - 透明 - 不透明度
+
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
