@@ -106,6 +106,9 @@ Pen settings
 實體化
 - 增加物體厚度, 偏移數值正負為向內或向外
 
+重設網格 Remesh
+- 減少多個物體結合產生的連接痕跡
+
 # Issues
 Blender ^2.8.3 中文化字體消失或殘缺問題？
 - 下載 [Blender 2.8.2](https://download.blender.org/release/Blender2.82/)
