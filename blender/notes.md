@@ -6,6 +6,7 @@ Blender 2.8.2 macOS
 - LoopTools (Add-ons Search "Mesh:LoopTools")
 - [JewelCraft](https://github.com/mrachinskiy/jewelcraft)
 - [Offset Edges](https://blenderartists.org/t/offset-edges/584283)
+- Rigify (Add-ons Search "Rigging：Rigify")
 
 # 數位板 Pen Tablets
 Wacom Intuos
@@ -152,6 +153,9 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 如何縫製衣服？
 - 連接需要縫製的點(多個點時用 LoopTools Bridge - X - 僅面) - Physics Properties - 布料 - 外型 - Sewing - 物體模式下按播放動畫 - Modifier Properties - 套用
 - 如有模型作碰撞面 - 物體模式下選取模型 - Physics Properties - 碰撞
+
+如何生成人體骨架？
+- Add-ons 內 Rigging：Rigify 為啟動 - 物體模式下 Shift + A - 骨架 - Human(Meta-Rig)
 
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
