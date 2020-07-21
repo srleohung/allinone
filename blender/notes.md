@@ -56,6 +56,7 @@ Pen settings
 移動時吸附 Ctrl(移動時按住)
 # 工具類
 移動 G
+線上移動 G + G
 旋轉 F
 縮放 S
 擠出 E
@@ -71,6 +72,8 @@ Pen settings
 面選單 Ctrl + F
 分離選單 P
 停止Knife Space
+縮放曲線 Option + S
+旋轉曲線 Command + T
 # 骨架類
 保持偏移 Ctrl + P - 保持偏移
 解除關係 Option + P - 解除關係
@@ -103,6 +106,9 @@ Pen settings
 
 實體化
 - 增加物體厚度, 偏移數值正負為向內或向外
+
+重設網格 Remesh
+- 減少多個物體結合產生的連接痕跡
 
 # Issues
 Blender ^2.8.3 中文化字體消失或殘缺問題？
@@ -156,6 +162,22 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 
 如何生成人體骨架？
 - Add-ons 內 Rigging：Rigify 為啟動 - 物體模式下 Shift + A - 骨架 - Human(Meta-Rig)
+
+如何為物體的部份面上參考色?
+- Material Properties - + - 新增 - Viewport Display - 顏色 - 編輯模式下選取打算上色的面 - 指派
+
+如何生成髮片？
+- 生成髮片主體 - 曲線 - 路徑 - 生成髮片外型 - 曲線 - 貝茲/圓 - 選取路徑 - Object Data Properties - 幾何 - 倒角 - 物體選取貝茲/圓
+- 窄縮物體為髮片兩端
+- 髮片外型曲線內可增加多個曲線，髮片主體曲線上也會生成
+- 髮片外型曲線中間的點為髮片主體曲線的位置
+
+如何增加/關閉Areas(窗口)？
+- 移動至左上(編輯器類型的左邊)或右上(選項的右邊)直至出現＋號，按下拉動出現新的Areas
+- 兩個Areas之間按右鍵 - Join Areas - 選擇為主的Areas按下左鍵
+
+如何透明化Reference？
+- Object Data Properties - 透明 - 不透明度
 
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
