@@ -51,3 +51,17 @@ How to set the project is not under gopath, but you can run the go command?
 cd $your_project
 ln -s $(pwd)/$your_project $GOPATH/src/$your_project
 ```
+
+# Bug Fix
+## go get package show undefined things
+### Bug
+```bash
+# github.com/tealeg/xlsx
+../../github.com/tealeg/xlsx/diskv.go:195:8: undefined: strings.Builder
+```
+### Fix
+- The new version may lack some variables or functions. You need to check its github branch, what is needed and check out the branch ID.
+```bash
+cd $GOPATH/src/github.com/tealeg/xlsx
+git checkout 5fbeeee
+```
