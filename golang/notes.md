@@ -43,3 +43,11 @@ $ ls $GOPATH/src/github.com/srleohung
 # File exists
 serialnetwork
 ```
+
+# Issues
+How to set the project is not under gopath, but you can run the go command?
+- use symbolic link
+```bash
+cd $your_project
+ln -s $(pwd)/$your_project $GOPATH/src/$your_project
+```
