@@ -182,5 +182,8 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 如何分離結合後的物體？
 - 編輯模式下選取打算分離的物體其中一點 - L - 右鍵 - 分離 - 選取項
 
+粒子編輯下所有功能鍵沒反應？
+- N - 工具 - 選項 - Editing Type - 粒子
+
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
