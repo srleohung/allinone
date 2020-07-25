@@ -6,7 +6,7 @@ Blender 2.8.2 macOS
 - LoopTools (Add-ons Search "Mesh:LoopTools")
 - [JewelCraft](https://github.com/mrachinskiy/jewelcraft)
 - [Offset Edges](https://blenderartists.org/t/offset-edges/584283)
-- Rigify (Add-ons Search "Rigging：Rigify")
+- Rigify (Add-ons Search "Rigging:Rigify")
 
 # 數位板 Pen Tablets
 Wacom Intuos
@@ -184,6 +184,19 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 
 粒子編輯下所有功能鍵沒反應？
 - N - 工具 - 選項 - Editing Type - 粒子
+
+使用自動權重時出現"骨頭熱權重:無法找出一根或多根骨頭"的錯誤?
+- 建議在物體套用細分表面前完成，細分表面後進行自動權重容易發生錯誤
+- 切開物體，并逐一使用自動權重，來找出造成自動權重失敗的部份，多數發生於部分物體太細或太薄
+
+做動畫時新動作覆蓋了之前動作？
+- 每次都按 A - I - 位旋
+
+如何傳輸身體權重到衣服？
+- 連接骨架和衣服 - 使用空白群組 - 選取身體 - 按住 command 選取衣服 - 權重繪製 - 權重 - 傳輸權重 - 頂點映射選取最近面頂點 - Source Layers Selection 選取依名稱
+
+如何防止穿模？
+- 選取身體 - 新增頂點群組 - 選取容易穿模的點 - 指派 - Modifier Properties - 遮罩 - 頂點群組選取之前新增的 - 按下右邊的反轉(<->)
 
 # References
 [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
