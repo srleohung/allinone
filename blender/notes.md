@@ -7,6 +7,8 @@ Blender 2.8.2 macOS
 - [JewelCraft](https://github.com/mrachinskiy/jewelcraft)
 - [Offset Edges](https://blenderartists.org/t/offset-edges/584283)
 - Rigify (Add-ons Search "Rigging:Rigify")
+- [MMD Tools](https://github.com/powroupi/blender_mmd_tools/tree/dev_test) 
+(使用時先解壓縮檔案，之後壓縮資料夾內的 mmd_tools ，最後在 Blender 安裝壓縮後的 mmd_tools ，如 Enable 時出現錯誤，請重啟 Blender 并重試 Enable)
 
 # 數位板 Pen Tablets
 Wacom Intuos
@@ -199,4 +201,6 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 - 選取身體 - 新增頂點群組 - 選取容易穿模的點 - 指派 - Modifier Properties - 遮罩 - 頂點群組選取之前新增的 - 按下右邊的反轉(<->)
 
 # References
-[Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
+- [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
+- [Free3D](https://free3d.com/zh/3d-models/)
+- [ニコニ立体](https://3d.nicovideo.jp/)
