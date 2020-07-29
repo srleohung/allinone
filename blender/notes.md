@@ -215,6 +215,10 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 - Albedo(Color, C, A)，Normalmap(N)，Roughness(R)
 ![texture_example](./texture_example.jpg "texture_example")
 
+如何生成 Texture Normal (主要作用於把高模的精細部分套用到低模的表面上)？
+- 先選取高模後選取低模 - 生成新圖片(建議為4096x4096) - 在材質畫面生成 Image Texture 并使用之前的新圖片 - Render Engine 選取 Cycles - Bake Type 選取 Normal - 開啟 Selected to Active - 按下 Bake (如效果不佳可以調整 Ray Distance 值)
+![texture_bake_normal](./texture_bake_normal.jpg "texture_bake_normal")
+
 # References
 - [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
 - [Free 3D Models | CGTrader](https://free3d.com/zh/3d-models/)
