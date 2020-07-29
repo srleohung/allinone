@@ -118,6 +118,7 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 
 使用陣列或鏡象時，物體尺寸錯誤？
 - 套用旋轉與縮放 Ctrl + A - 旋轉與縮放
+![rotation_and_scale](./rotation_and_scale.jpg "rotation_and_scale")
 
 快捷鍵失效？
 - 關閉倉頡或速成
@@ -200,7 +201,23 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 如何防止穿模？
 - 選取身體 - 新增頂點群組 - 選取容易穿模的點 - 指派 - Modifier Properties - 遮罩 - 頂點群組選取之前新增的 - 按下右邊的反轉(<->)
 
+如何在 Animation 頁面開啟攝影機預覽畫面？
+- 檢視 - 攝影機 - 作用中攝影機
+![camera_view](./camera_view.jpg "camera_view")
+
+如何使用 Texture 做出透明背景的材質(例如頭髮，樹葉等)？
+- Texture 為一張原色和一張黑白圖片(參考圖中左邊)
+![texture_alpha_example](./texture_alpha_example.jpg "texture_alpha_example")
+- Texture 為一張背景透明的原色圖片(參考圖中左邊)
+![texture_transparent_example](./texture_transparent_example.jpg "texture_transparent_example")
+
+如何使用 Texture 中的 Albedo，Normalmap 和 Roughness ？
+- Albedo(Color, C, A)，Normalmap(N)，Roughness(R)
+![texture_example](./texture_example.jpg "texture_example")
+
 # References
 - [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
-- [Free3D](https://free3d.com/zh/3d-models/)
+- [Free 3D Models | CGTrader](https://free3d.com/zh/3d-models/)
 - [ニコニ立体](https://3d.nicovideo.jp/)
+- [3DAssets.one - the 3d asset search engine](https://www.3dassets.one/)
+- [Textures for 3D, graphic design and Photoshop!](https://www.textures.com/)
