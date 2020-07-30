@@ -43,6 +43,7 @@ Pen settings
 # 通用類
 旋轉與縮放 Ctrl + A - 旋轉與縮放
 鎖定移動 (按下移動類型鍵後適用)X/Y/Z
+游標選項 Shift + S
 ```
 
 # 編輯模式 Edit Mode
