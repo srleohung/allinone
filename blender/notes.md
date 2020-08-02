@@ -49,6 +49,7 @@ Pen settings
 # 編輯模式 Edit Mode
 ```bash
 # 選取類
+選取鼠標位置的物體 L
 全選 A
 選取連結項 Command + L
 反選 Ctrl + I
