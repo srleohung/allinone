@@ -243,6 +243,6 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 
 - [Textures for 3D, graphic design and Photoshop!](https://www.textures.com/) - 提供紋理下載的網站
 
-- [Mixamo](https://www.mixamo.com/#/) - 提供上傳模型進行骨架和動畫綁定的網站
+- [Mixamo](https://www.mixamo.com/#/) - 提供上傳模型進行骨架和動畫綁定的網站
 
 - [匯出動畫教學](https://youtu.be/5xOeeP4bjuo) - 匯出動畫過程的影片
