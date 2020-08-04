@@ -224,9 +224,14 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 使用 Render 後模型圖片顏色出現格線？
 - 選取出現格線的物體 - Object - Shade Smooth
 
+如何複製骨架動作至另一個骨架？
+- 先選取被覆蓋的骨架 - 按住 command 選取複製的骨架 - Ctrl + L - Animation Data(會完全覆蓋)
+- 先選取被複製動作的骨架 - Pose Mode - 選取動作 - Ctrl + C - Object Mode - 選取另一個骨架 - Pose Mode - Ctrl + V
+
 # References
 - [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
 - [Free 3D Models | CGTrader](https://free3d.com/zh/3d-models/)
 - [ニコニ立体](https://3d.nicovideo.jp/)
 - [3DAssets.one - the 3d asset search engine](https://www.3dassets.one/)
 - [Textures for 3D, graphic design and Photoshop!](https://www.textures.com/)
+- [Mixamo](https://www.mixamo.com/#/)
