@@ -237,7 +237,7 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 
 - [Free 3D Models | CGTrader](https://free3d.com/zh/3d-models/) - 提供模型下載的網站
 
-- [ニコニ立体](https://3d.nicovideo.jp/) - MMD模型下載的網站
+- [ニコニ立体](https://3d.nicovideo.jp/) - MMD 模型下載的網站
 
 - [3DAssets.one - the 3d asset search engine](https://www.3dassets.one/) - 提供紋理下載的網站
 
@@ -245,4 +245,4 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 
 - [Mixamo](https://www.mixamo.com/#/) - 提供上傳模型進行骨架和動畫綁定的網站
 
-- [匯出動畫教學](https://youtu.be/5xOeeP4bjuo) - 匯出動畫過程的影片
+- [匯出動畫教學](https://youtu.be/5xOeeP4bjuo) - 從 Blender 中匯出動畫的過程影片
