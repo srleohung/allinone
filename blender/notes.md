@@ -228,10 +228,21 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 - 先選取被覆蓋的骨架 - 按住 command 選取複製的骨架 - Ctrl + L - Animation Data(會完全覆蓋)
 - 先選取被複製動作的骨架 - Pose Mode - 選取動作 - Ctrl + C - Object Mode - 選取另一個骨架 - Pose Mode - Ctrl + V
 
+如何生成 Rigify ？
+- 圖中使用附加元件 "Rigging:Rigify" 生成骨架 - 調整所有骨架至模型的對應位置 - 按下 Generate Rig 生成 rig - 選取物體 - 按住Shift選取之前生成的 rig - Ctrl + P - 使用自動權重
+![armature_rigify](./armature_rigify.jpg "armature_rigify")
+
 # References
-- [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/)
-- [Free 3D Models | CGTrader](https://free3d.com/zh/3d-models/)
-- [ニコニ立体](https://3d.nicovideo.jp/)
-- [3DAssets.one - the 3d asset search engine](https://www.3dassets.one/)
-- [Textures for 3D, graphic design and Photoshop!](https://www.textures.com/)
-- [Mixamo](https://www.mixamo.com/#/)
+- [Blender 2.83 參考手冊](https://docs.blender.org/manual/zh-hans/latest/) - Blender 功能介紹的網站
+
+- [Free 3D Models | CGTrader](https://free3d.com/zh/3d-models/) - 提供模型下載的網站
+
+- [ニコニ立体](https://3d.nicovideo.jp/) - MMD模型下載的網站
+
+- [3DAssets.one - the 3d asset search engine](https://www.3dassets.one/) - 提供紋理下載的網站
+
+- [Textures for 3D, graphic design and Photoshop!](https://www.textures.com/) - 提供紋理下載的網站
+
+- [Mixamo](https://www.mixamo.com/#/) - 提供上傳模型進行骨架和動畫綁定的網站
+
+- [匯出動畫教學](https://youtu.be/5xOeeP4bjuo) - 匯出動畫過程的影片
