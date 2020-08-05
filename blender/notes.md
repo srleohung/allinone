@@ -246,3 +246,5 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 - [Mixamo](https://www.mixamo.com/#/) - 提供上傳模型進行骨架和動畫綁定的網站
 
 - [匯出動畫教學](https://youtu.be/5xOeeP4bjuo) - 從 Blender 中匯出動畫的過程影片
+
+- [FacialMotionCapture](https://github.com/srleohung/FacialMotionCapture) - Real-time facial motion capture in Blender 2.8 using OpenCV and a webcam. This uses python scripting directly in Blender.
