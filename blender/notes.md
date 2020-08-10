@@ -91,6 +91,9 @@ Pen settings
 # 姿勢模式
 ```bash
 反轉運動學(IK) Shift + I
+重置旋轉 Option + R
+重置位置 Option + G
+重置大小 Option + S
 ```
 
 # Modifier Properties
