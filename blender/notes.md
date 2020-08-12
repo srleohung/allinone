@@ -144,6 +144,8 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 
 如何使用圖片為材質？
 - Material Properties - 增加材質 - 基礎色彩 - 影像紋理 - 開啟 - 選擇圖片 - 編輯模式內選取物體 - UV - 智慧 UV 投影
+- Material Properties - 增加材質 - 基礎色彩 - 影像紋理 - 開啟 - 選擇圖片 - 編輯模式內選取物體 - UV - 投影從視圖
+![project_from_view](./project_from_view.jpg "project_from_view")
 
 如何使用親子關係復製物體？
 - Object Properties(子物體) - 關係 - 親子選取父物體 - Object Properties(父物體) - Instancing - 選取點或面 - Ctrl + A - Make Instances Real
@@ -180,11 +182,11 @@ Blender ^2.8.3 中文化字體消失或殘缺問題？
 - 髮片外型曲線內可增加多個曲線，髮片主體曲線上也會生成
 - 髮片外型曲線中間的點為髮片主體曲線的位置
 
-如何增加/關閉Areas(窗口)？
+如何增加/關閉 Areas (窗口)？
 - 移動至左上(編輯器類型的左邊)或右上(選項的右邊)直至出現＋號，按下拉動出現新的Areas
 - 兩個Areas之間按右鍵 - Join Areas - 選擇為主的Areas按下左鍵
 
-如何透明化Reference？
+如何透明化 Reference ？
 - Object Data Properties - 透明 - 不透明度
 
 如何分離結合後的物體？
