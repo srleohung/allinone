@@ -191,9 +191,9 @@ sudo journalctl --system | grep rabbitmq
 
 ## RabbitMQ Enable Web Management Plugin
 ```bash
-sudo rabbitmq-plugins enable rabbitmq_management
 # Now you can open web management plugin in the browser for that enter the following URL in browser and click enter.
 # http://localhost:15672
 # After opening the localhost URL in browser, it will ask you for credentials to access web management plugin.
 # To access rabbitmq web management dashboard, the default Username and password of  is “guest” (Username: “guest” | Password: “guest”).
+sudo rabbitmq-plugins enable rabbitmq_management
 ```
