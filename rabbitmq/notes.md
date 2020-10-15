@@ -669,3 +669,15 @@ for d := range msgs {
     }
 }
 ```
+
+# Lazy queue (Golang)
+```go
+q, err := ch.QueueDeclare(
+    "",    // name
+    true, // durable
+    false, // delete when unused
+    false,  // exclusive
+    false, // noWait
+    map[string]interface{}{"x-queue-mode": "lazy"},   // arguments
+)
+```
