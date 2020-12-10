@@ -65,3 +65,13 @@ ln -s $(pwd)/$your_project $GOPATH/src/$your_project
 cd $GOPATH/src/github.com/tealeg/xlsx
 git checkout 5fbeeee
 ```
+## "gcc": executable file not found in $PATH
+### Bug
+```bash
+# zakkaya/vendor/github.com/gvalkov/golang-evdev
+exec: "gcc": executable file not found in $PATH
+```
+### Fix
+```bash
+sudo apt-get  install  build-essential
+```
