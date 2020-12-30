@@ -75,3 +75,23 @@ exec: "gcc": executable file not found in $PATH
 ```bash
 sudo apt-get  install  build-essential
 ```
+## json.Unmarshal not working
+struct field operatingUnitAisle has json tag but is not exported
+### Bug
+```go
+type Example struct {
+    id   string `json:"id"`
+    data string `json:"data"`
+}
+var example Example
+json.Unmarshal(data, &example)
+```
+### Fix
+```go
+type Example struct {
+    ID   string `json:"id"`
+    Data string `json:"data"`
+}
+var example Example
+json.Unmarshal(data, &example)
+```
