@@ -66,7 +66,7 @@ select name as personName from person;
 select * from person where income > 25 and (age < 30 or age > 60);
 ```
 ## Value like something
-- '_'matches a single letter
+- '_' matches a single letter
 - '%' matches a string
 ```sql
 -- Target like AXdXXX
@@ -140,4 +140,62 @@ select age, count(*) from person group by age;
 ```sql
 -- filter aggregate column
 select age, count(*) from person group by age having avg(age) > 25;
+```
+
+# View
+```sql
+-- create view table
+create view ageIncome(age,sumIncome) as select age, sum(income) from person group by age;
+-- select view table
+select age from ageIncome where sumIncome = (select max(sumIncome) from ageIncome);
+```
+## [Materialized Views](https://www.postgresql.org/docs/12/rules-materializedviews.html)
+```sql
+-- create materialized view table
+create materialized view ageIncome(age,sumIncome) as select age, sum(income) from person group by age;
+-- refresh view table
+refresh materialized view ageIncome;
+-- select view table
+select age from ageIncome where sumIncome = (select max(sumIncome) from ageIncome);
+```
+
+# Transaction
+## Commit Work
+```sql
+begin transaction;
+update CurrentAccount set Balance = Balance – 10 where AccountNo = 12345;
+update CurrentAccount set Balance = Balance + 10 where AccountNo = 55555;
+commit work;
+```
+## Rollback
+```sql
+begin transaction;
+update CurrentAccount set Balance = Balance – 10 where AccountNo = 12345; 
+savepoint mysavepoint;
+update CurrentAccount set Balance = Balance + 10 where AccountNo = 55555;
+rollback to savepoint mysavepoint;
+```
+
+# [Privileges](https://www.techonthenet.com/postgresql/grant_revoke.php)
+- SELECT - Ability to perform SELECT statements on the table.
+- INSERT - Ability to perform INSERT statements on the table.
+- UPDATE - Ability to perform UPDATE statements on the table.
+- DELETE - Ability to perform DELETE statements on the table.
+- TRUNCATE - Ability to perform TRUNCATE statements on the table.
+- REFERENCES - Ability to create foreign keys (requires privileges on both parent and child tables).
+- TRIGGER - Ability to create triggers on the table.
+- CREATE - Ability to perform CREATE TABLE statements.
+- ALL - Grants all permissions.
+## Grant
+```sql
+grant all on tablename to username;
+```
+## Revoke
+```sql
+revoke all on tablename to username;
+```
+
+# Index
+```sql
+create index index_name on employee(name);
 ```
