@@ -194,7 +194,10 @@ grant all on tablename to username;
 ```sql
 revoke all on tablename to username;
 ```
-
+## Superuser
+```sql
+alter user username with superuser;
+```
 # Index
 ```sql
 create index index_name on employee(name);
