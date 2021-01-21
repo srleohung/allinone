@@ -95,3 +95,17 @@ type Example struct {
 var example Example
 json.Unmarshal(data, &example)
 ```
+
+## cannot find package "github.com/influxdata/influxdb/client/v2"
+### Bug
+```bash
+# go get github.com/influxdata/influxdb/client/v2
+package github.com/influxdata/influxdb/client/v2: cannot find package "github.com/influxdata/influxdb/client/v2" in any of:
+...
+```
+### Fix
+```bash
+go get github.com/influxdata/influxdb
+cd $GOPATH/src/github.com/influxdata/influxdb
+git checkout 1.8
+```
