@@ -15,3 +15,11 @@ unsupported content encoding utf-8
 # NGINX configuration 
 proxy_set_header Content-Encoding "";
 ```
+
+## Error: /lib/x86_64-linux-gnu/libc.so.6: version 'GLIBC_2.28' not found
+
+### Bug
+The libc.so version does not support the old version of glibc
+
+### Fix
+Downgrade ubuntu version to build application
