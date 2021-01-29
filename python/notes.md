@@ -11,6 +11,11 @@ pip install virtualenv
 cd $project_name
 virtualenv venv
 ```
+- Setup virtualenv specific python version
+```bash
+virtualenv venv --python=$python_execute_path
+# example: virtualenv venv --python=/usr/bin/python
+```
 - Activate virtualenv
 ```bash
 source venv/bin/activate
