@@ -9,20 +9,26 @@ db.collectionName.find().forEach(
             function subObject(masterKey, subDoc) {
                 Object.keys(subDoc).forEach(function (subKey) {
                     let typeOfKey = typeof subDoc[subKey]
-                    if (!collectionStruct[masterKey + "." + subKey]) {
-                        collectionStruct[masterKey + "." + subKey] = []
+                    if (typeOfKey == 'string') {
+                        typeOfKey += '(' + subDoc[subKey].length + ')'
                     }
-                    if (collectionStruct[masterKey + "." + subKey].indexOf(typeOfKey) === -1) {
-                        collectionStruct[masterKey + "." + subKey].push(typeOfKey)
+                    if (!collectionStruct[masterKey + '.' + subKey]) {
+                        collectionStruct[masterKey + '.' + subKey] = []
+                    }
+                    if (collectionStruct[masterKey + '.' + subKey].indexOf(typeOfKey) === -1) {
+                        collectionStruct[masterKey + '.' + subKey].push(typeOfKey)
                     }
                     if (typeOfKey === 'object') {
                         if (subDoc[subKey]) {
-                            subObject(masterKey + "." + subKey, subDoc[subKey])
+                            subObject(masterKey + '.' + subKey, subDoc[subKey])
                         }
                     }
                 })
             }
             let typeOfKey = typeof doc[key]
+            if (typeOfKey == 'string') {
+                typeOfKey += '(' + doc[key].length + ')'
+            }
             if (!collectionStruct[key]) {
                 collectionStruct[key] = []
             }
