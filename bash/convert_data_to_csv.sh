@@ -21,7 +21,7 @@ gunzip $destination_path/*
 cat -A $destination_path/* | grep 'hftai-recommend' >$raw_data_path
 
 # Set CSV header
-echo "lunar_term,very_hot_warning,humidity,air_quality_index,gender,result,img_id,timestamp" >$csv_path
+echo "lunar_term,very_hot_warning,humidity,air_quality_index,age_group,gender,result,img_id,timestamp" >$csv_path
 
 # Read raw data line by line
 for ((i = 1; i <= $(wc -l $raw_data_path | awk '{print $1}'); i++)); do
@@ -32,12 +32,13 @@ for ((i = 1; i <= $(wc -l $raw_data_path | awk '{print $1}'); i++)); do
     very_hot_warning=$(echo $record | jq .very_hot_warning)
     humidity=$(echo $record | jq .humidity)
     air_quality_index=$(echo $record | jq .air_quality_index)
+    age_group=$(echo $record | jq .age_group)
     gender=$(echo $record | jq .gender)
     result=$(echo $record | jq .result)
     img_id=$(echo $record | jq .img_id)
     timestamp=$(head -n $i $raw_data_path | tail -n 1 | awk -F 'timestamp":"' '{print $2}' | awk -F '"}' '{print $1}')
 
     # Insert column value into CSV
-    echo "$lunar_term,$very_hot_warning,$humidity,$air_quality_index,$gender,$result,$img_id,$timestamp" >>$csv_path
+    echo "$lunar_term,$very_hot_warning,$humidity,$air_quality_index,$age_group,$gender,$result,$img_id,$timestamp" >>$csv_path
 
 done
