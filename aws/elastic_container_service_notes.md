@@ -6,14 +6,26 @@
 
 ## Getting Started with Amazon Elastic Container Service (Amazon ECS) using Fargate
 - Amazon ECS -> Clusters -> Get Started
+
 - Step 1: Container and Task
+
 Container definition -> Configure -> Edit container -> Container name & Image(Copy from ECR) & Port mappings -> Update -> Next
+
 - Step 2: Service
+
 Define your service -> Load balancer type -> Application Load Balancer -> Next
+
 - Step 3: Cluster
+
 Configure your cluster -> Cluster name -> Next
+
 - Step 4: Review
+
 Create
+
+- Step 5: If your application does not use port 80, you should do this.
+
+Service -> Details -> Security groups* -> Inbound rules -> Edit inbound rules -> Add your application port -> Add rule
 
 ## Deploy new docker image version to service
 - Push new docker image to ECR
