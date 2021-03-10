@@ -1,5 +1,12 @@
 # react
 
+## update object with string value on key
+```javascript
+const key = "OBJECT_KEY"
+const [data, setData] = useState({});
+setData({ ...data, [key]: value });
+```
+
 ## setState not re-rendering different situation
 ```javascript
 const [data, setData] = React.useState([1, 2, 3, 4, 5, 6, 7, 8, 9]);
