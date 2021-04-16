@@ -41,3 +41,8 @@ sudo reboot
 sudo netplan generate
 sudo netplan apply
 ```
+
+## Convert non-progressive JPEG images to progressive JPEG images
+```
+mogrify -interlace plane *.jpg
+```

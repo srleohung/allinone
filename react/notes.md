@@ -47,3 +47,27 @@ useEffect(() => {
     }}
 />
 ```
+
+## makeStyles use id
+```javascript
+import { makeStyles } from "@material-ui/core/styles";
+import logo from './logo.png';
+
+const useStyles = makeStyles({
+    main: {
+        '& #logo': {
+            maxWidth: "100%",
+        }
+    },
+});
+
+function Main() {
+    const classes = useStyles();
+
+    return (
+        <div className={classes.main}>
+            <img id="logo" src={logo}/>
+        </div>
+    );
+}
+```
