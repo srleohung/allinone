@@ -18,6 +18,10 @@ $ mkdir $HOME/go
 $ export GOPATH=$HOME/go
 ```
 
+# [Dep](https://github.com/golang/dep)
+- dep init
+- dep ensure
+
 ## Check if the installation is complete
 ### Check if the go command can be used
 #### Input
