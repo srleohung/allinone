@@ -46,3 +46,38 @@ sudo netplan apply
 ```
 mogrify -interlace plane *.jpg
 ```
+
+## OpenSSL
+### CSR certificate
+Use the following command to create a CSR using your newly generated private key:
+```bash
+openssl req -new -newkey rsa:2048 -nodes -keyout localhost.key -out localhost.csr
+openssl x509 -req -days 365 -in localhost.csr -signkey localhost.key -out localhost.crt
+```
+### SAN certificate
+Copy `/etc/ssl/openssl.cnf` to the working directory and change the configuration file:
+```
+[ CA_default ]
+# Extension copying option: use with caution.
+copy_extensions = copy
+
+[ req ]
+req_extensions = v3_req # The extensions to add to a certificate request
+
+[ v3_req ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = localhost
+```
+Use the following command to create a SAN certificate:
+```bash
+openssl genrsa -des3 -out root.key 2048
+openssl req -new -x509 -key root.key -out root.crt -days 365
+openssl req -new -key root.key -out root.csr 
+openssl genpkey -algorithm RSA -out localhost.key
+openssl req -new -nodes -key localhost.key -out localhost.csr -days 365 -config openssl.cnf -extensions v3_req
+openssl x509 -req -days 365 -in localhost.csr -out localhost.pem -CA root.crt -CAkey root.key -CAcreateserial -extfile openssl.cnf -extensions v3_req
+```
+### Add certificate
+Copy the contents of `localhost.crt` to `/etc/ssl/certs/ca-certificates.crt`
