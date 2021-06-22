@@ -113,3 +113,55 @@ go get github.com/influxdata/influxdb
 cd $GOPATH/src/github.com/influxdata/influxdb
 git checkout 1.8
 ```
+
+## json cannot unmarshal certain type into Go struct field
+### Bug
+```bash
+json: cannot unmarshal $TYPE into Go struct field $FIELD of type $TYPE
+```
+
+### Fix
+```go
+// Field appears in JSON as key "myName".
+Field int `json:"myName"`
+
+// Field appears in JSON as key "myName" and
+// the field is omitted from the object if its value is empty,
+// as defined above.
+Field int `json:"myName,omitempty"`
+
+// Field appears in JSON as key "Field" (the default), but
+// the field is skipped if empty.
+// Note the leading comma.
+Field int `json:",omitempty"`
+
+// Field is ignored by this package.
+Field int `json:"-"`
+
+// Field appears in JSON as key "-".
+Field int `json:"-,"`
+
+// Field appears in JSON as key "bool".
+// bool, for JSON booleans
+Field int `json:"bool"`
+
+// Field appears in JSON as key "float64".
+// float64, for JSON numbers
+Field int `json:"float64"`
+
+// Field appears in JSON as key "string".
+// string, for JSON strings
+Field int `json:"string"`
+
+// Field appears in JSON as key "[]interface{}".
+// []interface{}, for JSON arrays
+Field int `json:"[]interface{}"`
+
+// Field appears in JSON as key "map[string]interface{}".
+// map[string]interface{}, for JSON objects
+Field int `json:"map[string]interface{}"`
+
+// Field appears in JSON as key "nil".
+// nil for JSON null
+Field int `json:"nil"`
+```
