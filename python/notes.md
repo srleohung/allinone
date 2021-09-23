@@ -33,6 +33,12 @@ pip freeze -l > requirements.txt
 pip install -r requirements.txt
 ```
 
+# Lookup
+- Dictionary lookup (e.g., foo["bar"])
+- Attribute lookup (e.g., foo.bar)
+- Method call (e.g., foo.bar())
+- List-index lookup (e.g., foo[2])
+
 ## Fix API server not working (React Hook)
 ```
 from flask_cors import CORS
