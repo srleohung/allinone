@@ -165,3 +165,20 @@ Field int `json:"map[string]interface{}"`
 // nil for JSON null
 Field int `json:"nil"`
 ```
+
+```go
+type Float64 float64
+
+func (f *Float64) UnmarshalJSON(bytes []byte) error {
+	str := string(bytes)
+	if bytes[0] == '"' && bytes[len(bytes)-1] == '"' {
+		str = string(bytes[1 : len(bytes)-1])
+	}
+	o, err := strconv.ParseFloat(str, 64)
+	if err != nil {
+		return err
+	}
+	*f = Float64(o)
+	return nil
+}
+```
