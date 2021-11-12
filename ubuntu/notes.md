@@ -81,3 +81,15 @@ openssl x509 -req -days 365 -in localhost.csr -out localhost.pem -CA root.crt -C
 ```
 ### Add certificate
 Copy the contents of `localhost.crt` to `/etc/ssl/certs/ca-certificates.crt`
+
+## Add user to sudo group
+```bash
+sudo usermod -aG sudo www-data
+```
+
+## Allow user to run command without password
+sudo nano /etc/sudoers.d/www-data
+```bash
+%$group  ALL= NOPASSWD: $command
+# e.g. %www-data  ALL= NOPASSWD: /bin/systemctl restart apache2.service 
+```
